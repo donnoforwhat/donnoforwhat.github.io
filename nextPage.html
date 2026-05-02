@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>things I wanted to tell u.</title>
+    <style>
+        body {
+            background-color: #333;
+            color: white;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Tahoma', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .memory-container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .heartfelt-letter {
+            position: relative;
+            z-index: 10;
+            background: rgba(240, 228, 208, 0.9);
+            color: #553c13;
+            padding: 30px;
+            border-radius: 20px;
+            border: 3px solid #7B020B;
+            max-width: 400px;
+            text-align: center;
+            line-height: 1.8;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            margin: 20px;
+        }
+
+        .photo-wrapper {
+            position: absolute;
+            width: 160px;
+            background: #ccc;
+            padding: 10px;
+            padding-bottom: 35px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            z-index: 5;
+        }
+
+        .photo {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            display: block;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 35px;
+            background: rgba(98, 99, 119, 0.9);
+            color: #f0e4d0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 10px;
+            font-size: 13px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+            font-weight: bold;
+        }
+
+        .photo-wrapper.active {
+            z-index: 100;
+            transform: scale(1.3) rotate(0deg) !important;
+        }
+
+        .photo-wrapper.active .text-overlay {
+            opacity: 1;
+        }
+
+        @media (min-width: 768px) {
+            .p1 {
+                top: 10%;
+                left: 5%;
+                transform: rotate(-10deg);
+            }
+
+            .p2 {
+                bottom: 10%;
+                left: 8%;
+                transform: rotate(5deg);
+            }
+
+            .p3 {
+                top: 15%;
+                right: 5%;
+                transform: rotate(12deg);
+            }
+
+            .p4 {
+                bottom: 15%;
+                right: 8%;
+                transform: rotate(-8deg);
+            }
+
+            .p5 {
+                top: 40%;
+                left: 20%;
+                transform: rotate(-5deg);
+                z-index: 1;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .memory-container {
+                flex-direction: column;
+                height: auto;
+                padding-top: 50px;
+            }
+
+            .heartfelt-letter {
+                order: 1;
+                position: relative;
+                top: 0;
+                left: 0;
+            }
+
+            .photo-wrapper {
+                position: relative !important;
+                order: 2;
+                margin: 10px;
+                display: inline-block;
+                width: 140px;
+                top: auto !important;
+                left: auto !important;
+                right: auto !important;
+                bottom: auto !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="memory-container">
+    <div class="photo-wrapper p1" onclick="this.classList.toggle('active')">
+        <img src="photo26382078875.jpg" class="photo">
+        <div class="text-overlay">گذاشتمش چون خیلی دوست دارم اینو=)</div>
+    </div>
+
+    <div class="photo-wrapper p2" onclick="this.classList.toggle('active')">
+        <img src="photo26382080065.jpg" class="photo">
+        <div class="text-overlay">خوشمزه ترین شربت دنیا.</div>
+    </div>
+
+    <div class="photo-wrapper p3" onclick="this.classList.toggle('active')">
+        <img src="photo26382079988.jpg" class="photo">
+        <div class="text-overlay">اولین شبی که رفتی شیفت و خاچاپوری خوردیم:(</div>
+    </div>
+
+    <div class="photo-wrapper p4" onclick="this.classList.toggle('active')">
+        <img src="photo26382078919.jpg" class="photo">
+        <div class="text-overlay" dir="ltr">you have the cutest smile I've ever seen.</div>
+    </div>
+
+    <div class="heartfelt-letter">
+        <h2 dir="ltr">To my one and only Agoojo,</h2>
+        <p>تولدت مبارک یکی از قشنگترین، مهربونترین، کامل ترین و بهترین آدمایی که باهاش آشنا شدم:)
+        الان تقریبا یک سال و نیمه که دوستیم و هفت هشت ماهیه که یکی از مهمترین آدمای زندگی منی. تو کسی هستی که با بودنش توی زندگی هرکس، اونو چندین برابر قشنگ میکنه و من خوش شانس ترین آدم دنیام که تونستم تورو داشته باشم.
+        الان که دارم اینو مینویسم، نمیدونم از کدوم خاطرمون حرف بزنم چون تک تک لحظه هایی که کنار همیم برام باارزش ترینن.
+        انقدری دوستت دارم که فکرشم نمیکنی امیر:)
+        دلم میخواد همیشه خوشحال بودنت، بلند خندیدنت، موفق بودنت و راضی بودنت از خودتو ببینم چون تو لایق تمام چیزای خوب توی دنیایی.
+        تولدت مبارک مایک برای سالیوان من، وودی برای بازلایتر من، باب اسفنجی برای پاتریک من؛ و از همه مهمتر، تولد مبارک امیر برای نگار من. 3>
+       <br> you're my boy, no matter what. tysm for being in my life. I luv, adore and worship you. (Imma also kith u and hug u tightly whenever we meet🤭)</p>
+    </div>
+</div>
+<script> function toggleText(element) {
+    element.classList.toggle('active');
+}</script>
+</body>
+</html>
